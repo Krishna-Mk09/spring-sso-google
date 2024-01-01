@@ -37,8 +37,6 @@ public class UserController {
         String familyName = principal.getAttribute("name");
         String email = principal.getAttribute("email");
         String fullName = givenName + " " + familyName;
-//        logger.info("Full Name: {}", fullName);
-//        logger.info("Email: {}", email);
         User user = new User();
         user.setEmail(email);
         user.setName(familyName);
@@ -47,4 +45,22 @@ public class UserController {
         return "Hello, " + familyName + "! Your email is:" + email;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //        logger.info("Full Name: {}", fullName);
+//        logger.info("Email: {}", email);
 }
